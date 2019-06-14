@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/lpcloudlearning/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/lpcloudlearning/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/469232685455/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/spinnaker-project-243700/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/469232685455/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/spinnaker-project-243700/gcp-cd-codelab:$REVISION_ID"
